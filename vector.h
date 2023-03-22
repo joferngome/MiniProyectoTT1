@@ -22,5 +22,5 @@ double dot(double v1[],double v2[],int n1,int n2);
 
 #ifndef _CROSS_
 #define _CROSS_
-double cross(double v1[],double v2[],int n1,int n2);
+double crossProduct(double v_A[], double v_B[], double c_P[], int n1, int n2, int n3);
 #endif

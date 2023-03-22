@@ -1,0 +1,14 @@
+//
+// Created by joferngome on 22/03/2023.
+//
+
+#ifndef PROYECTOTT1_LAMBERTBATTIN_H
+#define PROYECTOTT1_LAMBERTBATTIN_H
+
+
+class LAMBERTBATTIN {
+
+};
+
+
+#endif //PROYECTOTT1_LAMBERTBATTIN_H

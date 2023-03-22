@@ -3,10 +3,11 @@
 //
 
 #include <iostream>
-#include <math.h>
+#include "cmath"
 #include "vector.h"
 
 using namespace std;
+
 
 
 int main(){
@@ -23,6 +24,15 @@ int main(){
         cout<<"test dot() passed"<<endl;
     else
         cout<<"Test dot() failed";
+
+    double v3[] ={1, 2, 3}, v4[]={4,9,2},v5[3];
+
+    if(crossProduct(v3,v4,v5,3,3,3)==-12.0){
+        cout<<"test cross() passed"<<endl;
+
+
+
+    }
 
 
 

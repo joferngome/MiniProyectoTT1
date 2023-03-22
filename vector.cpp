@@ -4,7 +4,10 @@
 
 
 #include "vector.h"
-#include "math.h"
+#include "cmath"
+
+using namespace std;
+
 
 double norm(double v[],int n){
     double suma;
@@ -32,6 +35,21 @@ double dot(double v1[],double v2[],int n1,int n2){
     for(i=0;i<n1;i++)
         suma+=v1[i]*v2[i];
     return suma;
+
+
+
+
+}
+
+double crossProduct(double v_A[], double v_B[], double c_P[], int n1, int n2, int n3) {
+
+    if (n1 != n2 && n2 != n3 && n3 != 3)
+        throw "different dimension vectors";
+
+    c_P[0] = v_A[1] * v_B[2] - v_A[2] * v_B[1];
+    c_P[1] = -(v_A[0] * v_B[2] - v_A[2] * v_B[0]);
+    c_P[2] = v_A[0] * v_B[1] - v_A[1] * v_B[0];
+    return c_P[0] + c_P[1] + c_P[2];
 
 
 
